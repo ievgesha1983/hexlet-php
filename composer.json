@@ -4,12 +4,23 @@
     "autoload": {
         "psr-4": {
             "Evgesha\\HexletPhp\\": "src/"
-        }
+        },
+	"files": [
+	    "src/Runner.php"
+	]
     },
     "authors": [
         {
             "name": "Evgenii Ivanov"
         }
     ],
-    "require": {}
+    "require": {
+        "illuminate/collections": "^12.46"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^4.0"
+    },
+    "scripts": {
+    	"phpcs": "phpcs"
+    }
 }
